@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Домашка по верстке">
+    <title>Верстка Figma</title>
+</head>
+
+<body>
+    <h1>Форма регистрации</h1>
+    <form action="index.html">
+        <fieldset>
+            <legend>Основная информация</legend>
+            <label for="name">Имя *</label>
+            <p>
+                <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+            </p>
+            <p>
+                <label for="surname">Фамилия *</label>
+            </p>
+            <p>
+                <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию" required>
+            </p>
+            <p>
+                <label for="nickname">Nickname *</label>
+            </p>
+            <input type="text" name="nickname" id="nickname" placeholder="Введите ваш nickname" required>
+            <p>Ваша дата рождения *</p>
+            <input type="date" name="name" required>
+            <p>Ваше время рождения *</p>
+            <input type="time" name="name" required>
+            <p>Ваш город *</p>
+            <select name="city">
+                <option selected disabled>Выберите город</option>
+                <option value="">Киев</option>
+                <option value="">Днепр</option>
+                <option value="">Одесса</option>
+                <option value="">Харьков</option>
+                <option value="">Запорожье</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Почта и пароль</legend>
+            <label for="email">Email *</label>
+            <p>
+                <input type="email" id="email" placeholder="Введите ваш email" required>
+            </p>
+            <p>
+                <label for="email1">Запасной Email *</label>
+            </p>
+            <p>
+                <input type="email" id="email1" placeholder="Введите ваш email" required>
+            </p>
+            <p>
+                <label for="pass">Пароль *</label>
+            </p>
+            <p>
+                <input type="password" id="pass" placeholder="Введите ваш пароль" minlength="8" maxlength="16" required>
+            </p>
+            <p>
+                <label for="confirmPass">Подтвердить пароль *</label>
+            </p>
+            <p>
+                <input type="password" id="confirmPass" placeholder="Введите ваш пароль" minlength="8" maxlength="16"
+                    required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <p>
+                <label for="phone">Телефон *</label>
+            </p>
+            <p>
+                <input type="tel" id="phone" placeholder="Введите ваш телефон" required>
+            </p>
+            <p>
+                <label for="phone1">Дополнительный телефон</label>
+            </p>
+            <p>
+                <input type="tel" id="phone1" placeholder="Введите ваш телефон">
+            </p>
+            <p>
+                <label for="skype">Skype</label>
+            </p>
+            <p>
+                <input type="text" id="skype" placeholder="Введите ваш телефон">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Уровень навыков</legend>
+            <p>
+                <label for="html">HTML</label>
+            </p>
+            <p>
+                <input type="range" id="html">
+            </p>
+            <p>
+                <label for="css">CSS</label>
+            </p>
+            <p>
+                <input type="range" id="css">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>О себе</legend>
+            <p>
+                <label for="faq">Расскажите о себе</label>
+            </p>
+            <p>
+                <textarea name="text" id="faq" placeholder="Введите текст" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>Ваш пол</p>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Мужской</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Женский</label>
+            <br>
+            <input type="radio" name="gender" id="another">
+            <label for="another">Другое</label>
+            <br>
+
+            <p>Ваш любимый цвет</p>
+            <input type="color">
+            <br>
+            <p>Вид занятости</p>
+            <input type="radio" name="work" id="fulltime">
+            <label for="fulltime">Работаю full time</label>
+            <br>
+            <input type="radio" name="work" id="parttime">
+            <label for="parttime">Работаю part time</label>
+            <br>
+            <input type="radio" name="work" id="freelance">
+            <label for="freelance">Freelance</label>
+            <br>
+            <input type="radio" name="work" id="nowork">
+            <label for="nowork">Временно не работаю</label>
+            <br>
+            <input type="radio" name="work" id="student">
+            <label for="student">Студент</label>
+            <br>
+
+            <p>Наличие домашних животных</p>
+            <input type="checkbox" name="cat" id="cat">
+            <label for="cat">Котик :3</label>
+            <br>
+            <input type="checkbox" name="dog" id="dog">
+            <label for="dog">Собачка</label>
+            <br>
+            <input type="checkbox" name="bird" id="bird">
+            <label for="bird">Птичка</label>
+            <br>
+            <input type="checkbox" name="fish" id="fish">
+            <label for="fish">Рыбка</label>
+            <br>
+            <input type="checkbox" name="another1" id="another1">
+            <label for="another1">Другое</label>
+            <br>
+            <br>
+            <input type="file">
+        </fieldset>
+        <fieldset>
+            <legend>Изучаемое направление</legend>
+            <p>Выберите направление из списка</p>
+            <select name="typeOfWork">
+                <option selected>Front-End</option>
+                <option value="">Back-End</option>
+            </select>
+        </fieldset>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+    </form>
+
+</body>
+
+</html>
